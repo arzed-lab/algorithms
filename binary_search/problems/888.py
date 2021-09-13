@@ -11,6 +11,11 @@
 # return any one of them. It is guaranteed that at least one answer exists.
 from typing import List
 
+'''
+We are using dict set() instead of lineary checking an array with "in", due to dict checking much more faster
+than array.
+'''
+
 class Solution:
     def fairCandySwap(self, aliceSizes: List[int], bobSizes: List[int]) -> List[int]:
         difference = (sum(aliceSizes) - sum(bobSizes)) // 2
