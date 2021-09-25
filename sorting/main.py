@@ -31,5 +31,4 @@ def bubble_sort(B: List) -> List:
     return B
 
 
-
 print(bubble_sort(A))
